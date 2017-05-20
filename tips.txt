@@ -1,0 +1,55 @@
+# raspimouse Software 
+https://github.com/ryuichiueda/raspimouse_book_info
+
+# raspimouse Hardware
+https://github.com/rt-net/RaspberryPiMouse_Hardware
+
+# Ubuntu16.04 images on RaspberryPi
+http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi
+
+# Ubuntu Server 16.04LTS (Not GUI)
+https://wiki.ubuntu.com/ARM/RaspberryPi
+$ wget http://www.finnie.org/software/raspberrypi/ubuntu-rpi3/ubuntu-16.04-preinstalled-server-armhf+raspi3.img.xz
+
+# Ubuntu bug comminuty
+https://bugs.launchpad.net/ubuntu
+
+# Wiki Ros node 
+http://wiki.ros.org/ja/ROS/Tutorials/UnderstandingNodes
+
+# Wiki Ros python programing guide
+http://wiki.ros.org/ja/PyStyleGuide
+
+# Wiki Roscore
+http://wiki.ros.org/ja/roscore
+
+# Wiki roslaunch
+http://wiki.ros.org/ja/roslaunch/XML
+
+
+# Ros command tips
+# rosnode list
+# rostopic list
+# rostopic info /topicname /....
+# rostopic echo /topicname -n 1          <- subscriber
+# rostopic pub -1 /topicname message     <- publisher
+# rqt_graph
+# rosmsg show <message type>
+# rosservice list
+# rosservice call
+# roslaunch <packagename> <hoge.launch>
+# rosparam list
+# rosparam dump / rosparam get
+
+
+# sample roslaunch change topicname
+# <node pkg="raspimouse_ros" name="motor" type="rtmotor.py" required="true">
+#	<remap from="motor_row" to="do_not_use" />
+# </node>
+
+
+# Gazebo tips
+# Gazebo上での移動ロボットモデルの構築
+# https://sites.google.com/site/robotlabo/time-tracker/ros/gazebo-mobilerobot
+# Gazeboによるマニピュレータのシミュレーション
+# https://sites.google.com/site/robotlabo/time-tracker/ros/gazebo_mani
